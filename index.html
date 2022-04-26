@@ -1,0 +1,56 @@
+ 
+<html>
+  <head>
+    <title>Reconocimiento de imagen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+
+      <br><br>
+
+      <p style="font-size: 22px;">モデルは、次のオブジェクトを識別するようにトレーニングされています: </p>
+      <b class = "name_of_objects">
+
+        <!-- vaso -->
+      <br>vaso<br><hr>
+        <!-- llave -->
+      <br>llave<br><hr>
+
+      <br>control<br><hr>
+
+      <br>algo<br><hr>
+
+      </b>
+      <label id = "camara">カメラビュー: </label>
+      <div id = "camera"></div>
+      <br><br>
+      <div id = "result"></div>
+      <br><br>
+      <button id = "tomar_foto" class = "btn btn-info" onclick = "写真を撮る()">写真を撮る</button>
+      <br><br>
+      <button id = "examinar_imagen" class = "btn btn-success" onclick = "とた_ねこ()">識別画像</button>
+      <br><br>
+
+      <p style="font-size: 22px;">Objeto:<span id = "result_object_name"></span>  </p>
+      <p style="font-size: 22px;">Precisión: <span id = "result_object_accuracy"></span>  </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
